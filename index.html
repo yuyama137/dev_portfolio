@@ -9,6 +9,7 @@
   <meta property='og:description' content='Hanako Yamadaのポートフォリオサイトです。'>
   <meta property="og:image" content="img/ogp.png">
   <meta name="description" content="Hanako Yamadaのポートフォリオサイトです" />
+  <!-- <script>document.getElementsByTagName("html")[0].className += " js";</script> -->
   <title>Hanako Yamada ポートフォリオ</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -17,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/vertical-timeline-master/assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.ico" />
   <link rel=”canonical” href=”URLが入る” />
 </head>
@@ -57,7 +59,7 @@
           </div>
           <div class="contents">
             <div class="profile-img">
-              <img src="./img/me2.png" alt="">
+              <img src="./img/me2.png" alt="snupie">
             </div>
             <div class="profile-texts">
               自己紹介ーaaaaaaaaaaaaaaa
@@ -75,6 +77,40 @@
               a<br>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- history -->
+
+      <section class="history section" id="history">
+        <div class="inner">
+          <div class="history-title">
+            <h2 class="title">history</h2>
+          </div>
+          <div class="contents">
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="cd-timeline js-cd-timeline">
+        <div class="container max-width-lg cd-timeline__container">
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--picture">
+              <img src="assets/img/cd-icon-picture.svg" alt="Picture">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>Title of section 1</h2>
+              <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">Jan 14</span>
+                <a href="#0" class="btn btn--subtle">Read more</a>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
         </div>
       </section>
 
@@ -111,7 +147,10 @@
           </div>
         </div>
       </section>
+
       <!-- /works -->
+
+
 
       <!-- skill -->
       <section class="skill section" id="skill">
@@ -221,5 +260,6 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type='text/javascript' src="js/script.js"></script>
+  <script src="css/vertical-timeline-master/assets/js/main.js"></script>
 </body>
 </html>
