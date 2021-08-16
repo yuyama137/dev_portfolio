@@ -4,6 +4,7 @@ body {
   line-height: 1.8;
   letter-spacing: .8px;
   color: #333;
+  background-color: #bdbdbd;
 }
 
 a {
@@ -53,8 +54,10 @@ li {
   line-height: 1;
   margin-bottom: 40px;
   text-align: center;
-  letter-spacing: .1em;
-  color: #f5b5d5;
+  font-family: "Oswald";
+  /* letter-spacing: .1em; */
+  text-shadow:0px 4px 4px #5a5658;
+  color: black;
 }
 
 .lead {
@@ -69,24 +72,28 @@ li {
   align-items: center; /*(基本的に)縦軸基準のアイテムの配置方法 : 中央寄せ*/
   justify-content: center;/*(基本的に)縦軸基準のアイテムの配置方法 : 中央寄せ*/
   /*vhはよくわからんけど、表示画面の高さに応じた割合らしい : ToDO*/
-  height: 65vh;
-  text-align: center;/*テキスト配置 : 中央寄せ*/
+  /* height: 65vh; */
+  /* text-align: center;テキスト配置 : 中央寄せ */
+  position: relative;
   /*デバッグ用*/
-  /* background-color: #333; */
+  background-color: #333;
 }
 
 .header img{
   /* height: 65vh; */
-  /* object-fit: fill; */
-  height: 80vh;
-  max-height: 100%;
+  object-fit: fill;
+  /* height: 80vh;
+  max-height: 100%; */
 }
 
 .header-inner {
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   position: absolute;
-  padding: 0 40px;
+  right: 0;
+  bottom: 0;
+  /* padding: 0 40px; */
+  color: rgba(209, 209, 209, 1);
 }
 
 .header-title {
@@ -94,7 +101,7 @@ li {
   font-size: 72px;
   line-height: 1.2;
   margin-bottom: 20px;
-  color: black;
+  /* color: black; */
 }
 .header-subtitle {
   font-family: "Amatic SC", cursive;
@@ -141,11 +148,16 @@ li {
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: #fff;
+  height: 40px;
+  background-color: rgba(82, 4, 4, 1);
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gnav-inner {
-  padding: 15px 40px;
+  /* padding: 15px 40px; */
 }
 
 .gnav-list {
@@ -166,7 +178,7 @@ li {
   padding: 5px 0;
   transition: .3s;
   letter-spacing: .05em;
-  color: #333;
+  color: #f5b5d5;
 }
 
 .gnav-item a:hover {
@@ -177,7 +189,7 @@ li {
  Profile
 -----------------------------------*/
 
-#profile .inner{
+#about .inner{
   width: 800px;
 }
 
@@ -186,7 +198,7 @@ li {
   padding: 10px 0;
 }
 
-#profile .contents{
+#about .contents{
   width: 100%;
   margin: 0 auto;
   padding: 20px 0;
@@ -204,12 +216,85 @@ li {
   justify-content: center;
 }
 
-#profile .profile-texts{
+#about .profile-texts{
   /* float: left; */
   font-size: large;
   width: 70%;
 }
 
+/*--------------------------------
+ History
+---------------------------------*/
+
+.history{
+  display: none;
+}
+
+.history .inner{
+
+}
+
+/*---------------------------------
+ Skill
+----------------------------------*/
+#skill .inner{
+  width: 800px;
+}
+
+.skill-title{
+  text-align: center;
+  padding: 10px 0;
+}
+
+.skill-wrapper{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.skill-container{
+  flex-basis: 20%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border: 4px solid;
+}
+
+.skill-type{
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+}
+
+.skill-img{
+  height: 100px;
+}
+
+.skill-container img{
+  height: 100%;
+}
+
+.skill-experience{
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+}
+
+.skill-stars{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.skill-star{
+  height: 20px;
+}
+
+.skill-star img{
+  height: 100%;
+  vertical-align: baseline;
+}
 
 
 /*--------------------------------
@@ -250,37 +335,6 @@ li {
   font-size: 10px;
 }
 
-/*--------------------------------
- Skill
----------------------------------*/
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: -50px;
-}
-
-.skill-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 48%;
-  margin-bottom: 50px;
-}
-
-.skill-img {
-  width: 60px;
-  height: auto;
-  margin-right: 20px;
-}
-
-.skill-body {
-  flex: 1;
-}
-
-.skill-name {
-  margin-bottom: 3px;
-}
 
 /*--------------------------------
  About
@@ -313,13 +367,25 @@ li {
   text-align: center;
 }
 
-.contact-item:not(:last-child) {
-  margin-right: 10px;
+#contact .inner{
+  width: 800px;
 }
 
-.contact-text {
-  margin-top: 10px;
+.contact-title{
+  text-align: center;
+  padding: 10px 0;
 }
+
+.contact-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contact-container{
+  flex-basis: 20%;
+}
+
 /*--------------------------------
  ページトップ
 ---------------------------------*/
@@ -341,13 +407,13 @@ li {
 ---------------------------------*/
 .footer {
   padding: 30px;
-  background-color: #efc4d8;
+  background-color: rgba(82, 4, 4, 1);
 }
 
 .copyright {
   font-size: 10px;
   text-align: center;
-  color: #797979;
+  color: #f5b5d5;
 }
 
 /*--------------------------------

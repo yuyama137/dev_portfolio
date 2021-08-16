@@ -3453,7 +3453,7 @@ mark {
     padding: var(--space-md) 0
 }
 
-.cd-timeline__container::before {
+.cd-timeline__container::before {/*垂線表示*/
     content: '';
     position: absolute;
     top: 0;

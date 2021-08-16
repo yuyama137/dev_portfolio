@@ -4,21 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
   <meta property='og:type' content='website'>
-  <meta property='og:title' content='WebデザイナーHanako Yamada ポートフォリオ'>
-  <meta property='og:url' content='URLが入る'>
-  <meta property='og:description' content='Hanako Yamadaのポートフォリオサイトです。'>
+  <meta property='og:title' content='ポートフォリオ'>
+  <meta property='og:url' content=''>
+  <meta property='og:description' content='ぽんずのポートフォリオ'>
   <meta property="og:image" content="img/ogp.png">
-  <meta name="description" content="Hanako Yamadaのポートフォリオサイトです" />
+  <meta name="description" content="ぽんずのポートフォリオ" />
   <!-- <script>document.getElementsByTagName("html")[0].className += " js";</script> -->
-  <title>Hanako Yamada ポートフォリオ</title>
+  <title>Portfolio of Ponzu</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+Garamond&family=Dancing+Script&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/VerticalTimeline/css/component.css" media="all" rel="stylesheet" type="text/css" />
+  <!-- <link href="css/VerticalTimeline/css/default.css" media="all" rel="stylesheet" type="text/css" /> -->
   <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/vertical-timeline-master/assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <script src="js/modernizr.custom.js"></script>
+  <!-- <link href="css/vertical-timeline-master/assets/css/style.css" media="all" rel="stylesheet" type="text/css" /> -->
   <link rel="shortcut icon" href="img/favicon.ico" />
   <link rel=”canonical” href=”URLが入る” />
 </head>
@@ -28,13 +31,15 @@
     <main class="content">
 
       <!-- header -->
-      <header class="header">
-        <img src="./img/pool2.png" alt="" class="header-img">
-        <div class="header-inner">
-          <p class="header-title">Yuichiro Yamamura</p>
-          <p class="header-subtitle">Portfolio</p>
+      <header>
+        <div class="header">
+          <div class="header-img">
+            <img src="./img/header-clipped.jpg" alt="">
+          </div>
+          <div class="header-inner">
+            <p class="header-title">Portfolio of Ponzu</p>
+          </div>
         </div>
-
       </header>
       <!-- /header -->
 
@@ -42,118 +47,199 @@
       <nav class="gnav">
         <div class="gnav-inner">
           <ul class="gnav-list">
-            <li class="gnav-item"><a href="#profile">profile</a></li>
-            <li class="gnav-item"><a href="#works">works</a></li>
-            <li class="gnav-item"><a href="#skill">skill</a></li>
-            <li class="gnav-item"><a href="#about">about</a></li>
-            <li class="gnav-item"><a href="#contact">contact</a></li>
+            <li class="gnav-item"><a href="#about">About</a></li>
+            <!-- <li class="gnav-item"><a href="#history">history</a></li> -->
+            <li class="gnav-item"><a href="#skill">Skill</a></li>
+            <li class="gnav-item"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
       <!-- /gnav -->
-
-      <section class="profile section" id="profile">
+      
+      <!-- profile -->
+      <section class="profile section" id="about">
         <div class="inner">
           <div class="profile-title">
-            <h2 class="title">Profile</h2>
+            <h2 class="title">About</h2>
           </div>
           <div class="contents">
             <div class="profile-img">
               <img src="./img/me2.png" alt="snupie">
             </div>
             <div class="profile-texts">
-              自己紹介ーaaaaaaaaaaaaaaa
-              aaaaaaaaaaaaaaaaaaaaaaaaa<br>
-              aaaaaaaaaaaaaaaaaaaaaaa<br>
-              a<br>
-              a<br>
-              a<br>
-              a<br>
-              a<br>
-              a<br>
-              a<br>
-              a<br>
-              a<br>
-              a<br>
+              はじめまして。<br>
+              地方大のM2をしているぽんず(<a href="https://twitter.com/ponzu_321">@ponzu_321</a>)と申します。<br>
+              普段は深層学習の研究を細々としています。わけあってフロントの勉強をする必要があり、試しにポートフォリオを作ってみました。これからも適当に更新していき、中身を充実させるつもりです。<br>
+              まだ何も書いてませんが、よろしくお願いします。
             </div>
           </div>
         </div>
       </section>
+      <!-- /profile -->
 
       <!-- history -->
 
       <section class="history section" id="history">
         <div class="inner">
           <div class="history-title">
-            <h2 class="title">history</h2>
+            <h2 class="title">History</h2>
           </div>
           <div class="contents">
+            <ul class="cbp_tmtimeline">
+              <li>
+                <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                  <h2>Ricebean black-eyed pea</h2>
+                  <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean black-eyed pea maize eggplant. Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato summer purslane salsify fennel horseradish dulse. Winter purslane garbanzo artichoke broccoli lentil corn okra silver beet celery quandong. Plantain salad beetroot bunya nuts black-eyed pea collard greens radish water spinach gourd chicory prairie turnip avocado sierra leone bologi.</p>
+                </div>
+              </li>
+              <li>
+                <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                  <h2>Ricebean black-eyed pea</h2>
+                  <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean black-eyed pea maize eggplant. Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato summer purslane salsify fennel horseradish dulse. Winter purslane garbanzo artichoke broccoli lentil corn okra silver beet celery quandong. Plantain salad beetroot bunya nuts black-eyed pea collard greens radish water spinach gourd chicory prairie turnip avocado sierra leone bologi.</p>
+                </div>
+              </li>
+            </ul>
 
           </div>
         </div>
 
       </section>
-
-      <section class="cd-timeline js-cd-timeline">
-        <div class="container max-width-lg cd-timeline__container">
-          <div class="cd-timeline__block">
-            <div class="cd-timeline__img cd-timeline__img--picture">
-              <img src="assets/img/cd-icon-picture.svg" alt="Picture">
-            </div> <!-- cd-timeline__img -->
-    
-            <div class="cd-timeline__content text-component">
-              <h2>Title of section 1</h2>
-              <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-    
-              <div class="flex justify-between items-center">
-                <span class="cd-timeline__date">Jan 14</span>
-                <a href="#0" class="btn btn--subtle">Read more</a>
-              </div>
-            </div> <!-- cd-timeline__content -->
-          </div> <!-- cd-timeline__block -->
-        </div>
-      </section>
-
-      <!-- works -->
-      <section class="works section" id="works">
-        <div class="inner">
-          <h2 class="title">works</h2>
-          <div class="works-list">
-            <a class="works-item" href="works-template.html">
-              <p class="works-img"><img src="img/works-sample-thumb.jpg" alt="" /></p>
-              <p class="works-name">作品名が入る</p>
-              <p class="works-info">Design / Coding(Responsive)</p>
-            </a>
-            <a class="works-item" href="works-template.html">
-              <p class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></p>
-              <p class="works-name">作品名が入る</p>
-              <p class="works-info">Design / Coding(Responsive) / WordPress</p>
-            </a>
-            <a class="works-item" href="works-template.html">
-              <p class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></p>
-              <p class="works-name">作品名が入る</p>
-              <p class="works-info">Design</p>
-            </a>
-            <a class="works-item" href="works-template.html">
-              <p class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></p>
-              <p class="works-name">作品名が入る</p>
-              <p class="works-info">Banner Design</p>
-            </a>
-            <a class="works-item" href="works-template.html">
-              <p class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></p>
-              <p class="works-name">作品名が入る</p>
-              <p class="works-info">Banner Design</p>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- /works -->
-
-
 
       <!-- skill -->
+
       <section class="skill section" id="skill">
+        <div class="inner">
+          <div class="skill-title">
+            <h2 class="title">Skill</h2>
+          </div>
+          <div class="skill-wrapper">
+            <div class="skill-container">
+              <div class="skill-type">
+                Python
+              </div>
+              <div class="skill-img">
+                <img src="img/python.png" alt="">
+              </div>
+              <div class="skill-experience">
+                4 years
+              </div>
+              <div class="skill-stars">
+                <div class="skill-star">
+                  <img src="img/star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/no-star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/no-star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="skill-container">
+              <div class="skill-type">
+                Pytorch
+              </div>
+              <div class="skill-img">
+                <img src="img/torch.png" alt="">
+              </div>
+              <div class="skill-experience">
+                2 years
+              </div>
+              <div class="skill-stars">
+                <div class="skill-star">
+                  <img src="img/star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/no-star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/no-star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/no-star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="skill-container">
+              <div class="skill-type">
+                Java
+              </div>
+              <div class="skill-img">
+                <img src="img/java.png" alt="">
+              </div>
+              <div class="skill-experience">
+                1 year
+              </div>
+              <div class="skill-stars">
+                <div class="skill-star">
+                  <img src="img/star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/no-star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/no-star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/no-star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/no-star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="skill-container">
+              <div class="skill-type">
+                C#
+              </div>
+              <div class="skill-img">
+                <img src="img/cs.png" alt="">
+              </div>
+              <div class="skill-experience">
+                0.5 year
+              </div>
+              <div class="skill-stars">
+                <div class="skill-star">
+                  <img src="img/star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/no-star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/no-star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/no-star.png" alt="">
+                </div>
+                <div class="skill-star">
+                  <img src="img/no-star.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </section>
+
+      <!-- /skill -->
+
+      <!-- skill -->
+      <!-- <section class="skill section" id="skill">
         <div class="inner">
           <h2 class="title">skill</h2>
           <div class="skill-list">
@@ -207,53 +293,38 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- /skill -->
-
-      <!-- about -->
-      <section class="about section" id="about">
-        <div class="inner">
-          <h2 class="title">about</h2>
-          <div class="profile">
-            <p class="profile-img">
-              <img src="img/profile.jpg" alt="">
-            </p>
-            <div class="profile-body">
-              <p>
-                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
-              </p>
-              <p>
-                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /about -->
 
       <!-- contact -->
       <section class="contact section" id="contact">
         <div class="inner">
-          <h2 class="title">contact</h2>
-          <p class="lead">
-            お問い合わせは、<br class="sp-only">SNSかメールにてお願いいたします。
-          </p>
-          <div class="contact-list">
-            <a class="contact-item" href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
-            <a class="contact-item" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-            <span class="contact-item">xxxxxx@gmail.com</span>
+          <div class="contact-title">
+            <h2 class="title">Contact</h2>
+          </div>
+          <div class="contact-wrapper">
+            <div class="contact-container">
+              <a href="https://twitter.com/ponzu_321">
+                <img src="img/twitter.png" alt="">
+              </a>
+            </div>
+            <div class="contact-container">
+              <a href="https://twitter.com/ponzu_321">
+                <img src="img/insta.png" alt="">
+              </a>
+            </div>
+            <div class="contact-container">
+              <a href="https://twitter.com/ponzu_321">
+                <img src="img/github.png" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </section>
-      <!-- /contact -->
-      <div class="page-top" id="js-page-top">
-        <span class="material-icons-outlined">expand_less</span>
-      </div>
-    </main>
 
     <!-- footer -->
     <footer class="footer">
-      <div class="copyright">&copy;Hanako Yamada</div>
+      <div class="copyright">&copy;Ponzu. All Rights Reserved.</div>
     </footer>
     <!-- /footer -->
 
